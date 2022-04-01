@@ -1,0 +1,265 @@
+html{
+    
+    background-color: black;
+    margin: 6px;
+}
+
+h1, h2, h3, h4, h5, p, div{
+    color: white;
+    font-family:monospace;
+    text-align: center;
+}
+
+h2{
+    margin-top: 100px;
+}
+
+top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cont-temporizador{
+    display: flex;
+    justify-content: center;   
+    margin-top: 30px; 
+}
+  
+.cont-temporizador .bloque{
+    margin: 0px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.cont-temporizador .bloque div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(80, 80, 80);
+    box-shadow: 0px 0px 6px 2px #ebc700 inset;
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: bold;
+    width: 90px;
+    height: 55px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+  
+.cont-temporizador .bloque p{
+    font-size: 11px;
+    font-weight: bold;
+    color: #d6d6d6;
+}
+
+.a2{
+  transform: translate(-50%,-50%);
+  font-size: 22px;
+  background-color: #b38300;
+  color: #3f120c;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 18px 36px;
+  box-shadow: 0px 0px 2px 1px rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+}
+
+.a1{
+    position: absolute;
+    margin-left: 49%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    background-color: #b38300;
+    color: #3f120c;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 18px 45px;
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+  }
+  
+  .a1:before{
+    content: '';	
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.06);	
+  }
+  
+  /*---------- Borde 1(arriba) ------------*/
+  .a1 span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, #3f120c, #e7c039);	
+    animation: borderTop 2s linear infinite;
+  }
+  
+  @keyframes borderTop{
+    0%{
+        transform: translateX(-100%);  
+    }
+    100%{
+        transform: translateX(100%);  
+    }
+  }
+  
+  /*---------- Borde 2(derecho) ------------*/
+  .a1 span:nth-child(2){
+    position: absolute;
+    top: 0;	
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom, #3f120c, #e7c039);	
+    animation: borderLeft 2s linear infinite;
+    animation-delay: 1s;
+  }
+  
+  @keyframes borderLeft{
+    0%{
+        transform: translateY(-100%);  
+    }
+    100%{
+        transform: translateY(100%);  
+    }
+  }
+  
+  /*---------- Borde 3(abajo) ------------*/
+  .a1 span:nth-child(3){
+    position: absolute;
+    bottom: 0;	
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to left, #3f120c, #e7c039);	
+    animation: borderBottom 2s linear infinite;
+  }
+  
+  @keyframes borderBottom{
+    0%{
+        transform: translateX(100%);  
+    }
+    100%{
+        transform: translateX(-100%);  
+    }
+  }
+  
+  /*---------- Borde 4(izquierdo) ------------*/
+  .a1 span:nth-child(4){
+    position: absolute;
+    top: 0;	
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to top, #3f120c, #e7c039);	
+    animation: borderRight 2s linear infinite;
+    animation-delay: 1s;
+  }
+  
+  @keyframes borderRight{
+    0%{
+        transform: translateY(100%);  
+    }
+    100%{
+        transform: translateY(-100%);  
+    }
+  }
+  
+  /* Aplicando estilos para el contenedor del texto */
+  .contenedor .cont-texto {
+      display: inline-block;
+      margin-top: 50px;
+  }
+  
+  /* Aplicando estilos 3D para el texto */
+  .contenedor .cont-texto .texto { 
+    color: rgb(10, 180, 137);
+    text-align: center; 
+    font-size: 25px;
+    transform: perspective(200px) rotateX(10deg);
+    letter-spacing: .1em;
+    user-select: none;
+    transition: all .4s ease;
+    text-shadow: 0 -1px 0 #fff,
+                0 1px 0 #4d4c00, 
+                0 2px 0 #484700, 
+                0 3px 0 #464100, 
+                0 4px 0 #433f00, 
+                0 5px 0 #3d4100, 
+                0 6px 0 #2c3f00, 
+                0 7px 0 #3d3c00, 
+                0 8px 0 #3a3100, 
+                0 9px 0 #383400, 
+                0 10px 0 #352400, 
+                0 11px 0 #322600, 
+                0 12px 0 #2f2200, 
+                0 13px 0 #272b00, 
+                0 14px 0 #281f00, 
+                0 15px 0 #1f1400;
+  }
+  
+  /* Aplicando efecto hover al texto 3D*/
+  .contenedor .cont-texto .texto:hover {
+    transition: all .4s ease;
+    text-shadow: 0 0px 0 #000;
+    transform: translate(0px, 15px) perspective(200px) rotateX(10deg);
+    letter-spacing: .12em;
+  }
+
+  fotodroga{
+    display: flex;
+    justify-content: left;
+    font-size: 30px;
+  }
+
+  .mdma{
+    font-size: 28px;
+  }
+
+  .desde{
+    display: flex;
+    font-size: small;
+  }
+
+  .droga{
+    text-align: left;
+  }
+
+  .droga1{
+    text-align: left;
+    font-size: 20px;
+  }
+
+  #promocion{
+    display: flex;
+    height: 250px;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #ff6600 0%, #ffcc00 100%);
+  }
+  
+  .promo2{
+    margin-top: -16%;
+    font-size: 30px;
+  }
+
+  .promo3{
+    font-size: 25px;
+  }
+
+  .a3{
+    transform: translate(-50%,-50%);
+    font-size: 22px;
+    background-color: #b38300;
+    color: #3f120c;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 18px 36px;
+    box-shadow: 0px 0px 2px 1px rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+  }
