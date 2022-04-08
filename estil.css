@@ -238,7 +238,7 @@ top{
 
   #promocion{
     display: flex;
-    height: 480px;
+    height: 460px;
     background-image: linear-gradient(to bottom, #ff6600 0%, #ffcc00 100%);
   }
   
@@ -254,8 +254,9 @@ top{
   }
 
   .a3{
+    position: absolute;
     transform: translate(-50%,-50%);
-    margin-top: 420px;
+    margin-top: 400px;
     margin-left: 50%;
     font-size: 22px;
     background-color: #b38300;
@@ -295,13 +296,153 @@ top{
   }
 
   boxprod{
+    position: absolute;
+    align-items: center;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    margin-left: 5%;
+    margin-top: 50px;
+    
+  }
+
+  .arrow , .arrow2{
+    padding-left: 200px;
+    padding-right: 200px;
+    opacity: 0.5;
+  }
+
+  .arrow{
+    transform: scaleX(-1);
+  }
+
+  .pass{
+    padding: 50px;
   }
 
   boxprec{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 29%;
+  }
+
+  .prec{
+    padding: 86px;
+  }
+
+  boxdes{
+    margin-top: 230px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30%;
+  }
+
+  .des{
+    padding: 56px;
+  }
+
+
+  contacto{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: right;
+    margin-right: 43%;
+  }
+
+  .name{
+    background-color: rgb(128, 128, 128);
+    color: rgb(53, 53, 53);
+    height: 30px;
+    width: 200px;
+    text-align: left;
+    padding-top: 15px;
+    padding-left: 5px;
+  }
+
+  .button{
+    background-color: rgb(97, 97, 97);
+    color: rgb(53, 53, 53);
+    height: 30px;
+    width: 150px;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+  }
+
+  bottom{
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+  opciones, oooo, ppppp{
+    display: flex;
+    flex-direction: column;
+    flex: 33%;
+    background-color: rgba(175, 175, 175, 0.329);
+    text-align: left;
+  }
+
+  .aaa{
+    text-align: left;
+    padding-left: 280px;
+  }
+
+  .bbb{
+    text-align: left;
+  }
+
+  .mapa{
+    padding: 10px;
+  }
+
+
+  fotocamiseta{
+    display: flex;
+    justify-content: right;
+    font-size: 30px;
+  }
+
+  .cajaimg{
+    padding-left: 20px;
+  }
+
+ 
+
+  .desde1{
+    text-align: right;
+    font-size: small;
+  }
+
+
+  .pastillas{
+    text-align: right;
+    display: flex;
+    justify-content: right;
+ 
+  }
+
+  .pastillas1{
+    display: flex;
+    width: 800px;
+    font-size: 20px;
+    text-align: right;
+  }
+  
+  .a6{
+    margin-left: 36%;
+    margin-top: 3%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-size: 22px;
+    background-color: #b38300;
+    color: #3f120c;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 18px 36px;
+    box-shadow: 0px 0px 2px 1px rgba(255, 255, 255, 0.3);
+    overflow: hidden;
   }
